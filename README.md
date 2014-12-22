@@ -2,6 +2,8 @@
 
 This is a Skeleton and Demo application for using [Foundation for Apps](http://foundation.zurb.com/apps) with [Durandal JS](http://durandaljs.com)
 
+## [LIVE DEMO](http://durandalforge.github.io/durandal-foundation-starterkit/)
+
 ## Requirements
 
 You'll need the following software installed to get started.
