@@ -1,0 +1,20 @@
+{
+  "name": "durandal-foundation-starterkit",
+  "version": "0.1.0",
+  "authors": [
+    "Muhammad Safraz Razik <mr.safraz@gmail.com>"
+  ],
+  "description": "Durandal + Foundation for Apps StarterKit",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "assets"
+  ],
+  "dependencies": {
+    "durandal": "~2.1.0",
+    "jquery": "1.9.1",
+    "foundation-apps": "DurandalForge/foundation-apps#no-angular-deps",
+    "durandal-foundation": "DurandalForge/durandal-foundation"
+  }
+}

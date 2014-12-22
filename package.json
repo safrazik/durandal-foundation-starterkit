@@ -1,0 +1,24 @@
+{
+  "name": "durandal-foundation-starterkit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Durandal + Foundation for Apps StarterKit",
+  "homepage": "https://github.com/DurandalForge/durandal-foundation-starterkit",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DurandalForge/durandal-foundation-starterkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DurandalForge/durandal-foundation-starterkit/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-connect": "~2.2.0",
+    "gulp-livereload": "~3.0.2",
+    "gulp-ruby-sass": "1.0.0-alpha",
+    "gulp-autoprefixer": "^1.0.1"
+  },
+  "author": "Muhammad Safraz Razik <mr.safraz@gmail.com>",
+  "license": "MIT"
+}

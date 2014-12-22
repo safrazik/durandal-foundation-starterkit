@@ -1,0 +1,92 @@
+<div class="grid-block">
+	<div class="grid-block large-10 medium-9">
+		<div class="grid-content">
+			<div class="doc-section">
+				<h3>Message Box</h3>
+				<p>
+					Durandal's Message Box implementation has been overriden. You can use the same Durandal API
+					<br>
+					<a class="hollow button" data-bind="click: showBasicMessageBox">Show Basic MessageBox</a>
+					<a class="hollow button" data-bind="click: showAdvancedMessageBox">Show Advanced MessageBox</a>
+					<span data-bind="if: userIsCrazy">You are crazy</span>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Modal Dialog</h3>
+				<p>
+					<a class="hollow button" data-bind="click: showBasicModal">Show Basic Modal</a>
+					<a class="hollow button" data-bind="click: showAdvancedModal">Show Advanced Modal</a>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Offcanvas</h3>
+				<p>
+					<a class="hollow button" data-bind="click: showBasicOffcanvas">Show Basic Offcanvas</a>
+					<a class="hollow button" data-bind="click: showAdvancedOffcanvas">Show Advanced Offcanvas</a>
+					<a class="secondary button" data-bind="click: showTopOffcanvas">Show Top Offcanvas</a>
+					<a class="secondary button" data-bind="click: showRightOffcanvas">Show Right Offcanvas</a>
+					<a class="secondary button" data-bind="click: showBottomOffcanvas">Show Bottom Offcanvas</a>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Panel</h3>
+				<p>
+					<a class="hollow button" data-bind="click: showBasicPanel">Show Basic Panel</a>
+					<a class="hollow button" data-bind="click: showAdvancedPanel">Show Advanced Panel</a>
+					<a class="secondary button" data-bind="click: showTopPanel">Show Top Panel</a>
+					<a class="secondary button" data-bind="click: showRightPanel">Show Right Panel</a>
+					<a class="secondary button" data-bind="click: showBottomPanel">Show Bottom Panel</a>
+				</p>
+				<h4 class="subheader">Transforming Panel</h4>
+				<p class="show-for-medium">
+					Resize your browser to a smaller width or test it on a mobile device to see the <strong>Transforming Panel</strong> on the right in action
+				</p>
+				<p class="hide-for-medium">
+			 		<a class="alert button" href="#" data-bind="click: showTransformingPanel">Show Transforming Panel</a>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Actionsheet</h3>
+				<p style="padding-left: 100px;">
+					<a class="hollow button" data-bind="click: showBasicActionsheet">Show Basic Actionsheet</a>
+					<br> You shared to: <span data-bind="text: whereToShare"></span>
+				</p>
+				<p style="padding-left: 100px;">
+					<a class="hollow button" data-bind="click: showAdvancedActionsheet">Show Advanced Actionsheet</a>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Popup</h3>
+				<p>
+					<a class="hollow button" data-bind="click: showBasicPopup">Show Basic Popup</a>
+					<a class="hollow button" data-bind="click: showAdvancedPopup">Show Advanced Popup</a>
+				</p>
+			</div>
+			<div class="doc-section">
+				<h3>Notification</h3>
+				<p>
+					<a class="hollow button" data-bind="click: showBasicNotification">Show Basic Notification</a>
+					<a class="hollow button" data-bind="click: showAdvancedNotification">Show Advanced Notification</a>
+				</p>
+			</div>
+
+			<!-- <a class="button" data-bind="click: openModal">Open Modal</a> -->
+			<!-- <a class="button" data-bind="click: openOffcanvas">Open Offcanvas</a> -->
+			<!-- <a style="margin-right: 1rem;" class="button" data-bind="click: openActionSheet">Open Action Sheet</a> -->
+			<!-- <a class="button" data-bind="click: openNotification">Open Notification</a> -->
+			<!-- <a class="button" data-bind="click: openPopup">Open Popup</a> -->
+			<!-- <a class="button" data-bind="click: openPanel">Open Panel</a> -->
+			<div style="height: 250px;"></div>
+		</div>
+	</div>
+	<div class="medium-grid-block medium-3 large-2 panel panel-right" style="background: #FAFAFA;" id="secondary-side-bar">
+	  <div class="grid-content collapse sidebar">
+	    <ul class="menu-bar vertical" style="background: transparent;">
+	      <li class="title">Transforming Panel</li>
+	      <li><a href="#">Link 1</a></li>
+	      <li><a href="#" class="is-active">Link 2</a></li>
+	      <li><a href="#">Link 3</a></li>
+	    </ul>
+	  </div>
+	</div>
+</div>

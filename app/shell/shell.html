@@ -1,0 +1,34 @@
+<div class="grid-block">
+
+  <div class="vertical medium-grid-block medium-3 large-2 panel panel-left" style="background: #FAFAFA; border-right: 1px solid #555;" id="main-sidebar">
+    <div class="primary title-bar">
+      <div class="center title">Durandal Foundation</div>
+<!--       <span class="left"><a href="#"></a></span>
+      <span class="right"><a href="#"></a></span> -->
+    </div>
+    <div class="grid-content collapse">
+      <ul class="menu-bar vertical" style="background: transparent;">
+        <li class="title">Navigation</li>
+        <!-- ko foreach: router.navigationModel -->
+        <li data-bind="css: {'is-active': isActive}">
+          <a data-bind="attr: {href: hash}, text: title, click: $parent.closeMainSidebar"></a>
+        </li>
+        <!-- /ko -->
+        <li><a href="" target="_blank">Docs & Source</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vertical grid-block large-10 medium-9">
+    <div class="primary title-bar">
+      <div class="center title" data-bind="text: getTitle()"></div>
+      <span class="left">
+        <a class="hide-for-medium" href="#" data-bind="click: showMainSidebar">Menu</a>
+        <a class="show-for-medium" href="#" data-bind="click: router.navigateBack">&lt; Back</a>
+      </span>
+      <span class="right"><a href="#" data-bind="click: openSettings">Settings</a></span>
+    </div>
+    <div class="grid-block" data-bind="router: {transition: settings.transition, animationIn: settings.animationIn, animationOut: settings.animationOut, animationEasing: settings.animationEasing, animationSpeed: settings.animationSpeed, cacheViews: true}"></div>
+  </div>
+    <!-- <div class="grid-block" bind-router="{transition: 'entrance', cacheViews: true}"></div> -->
+</div>

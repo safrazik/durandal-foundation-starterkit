@@ -1,0 +1,46 @@
+<div class="vertical grid-block">
+
+  <div class="primary title-bar">
+      <div class="center title">Settings</div>
+      <span class="right"><a href="#" data-bind="click: done">Done</a></span>
+  </div>
+
+  <div class="grid-content" style="max-height: calc(100vh - 5rem)">
+    <section class="block-list">
+      <header>Transition</header>
+      <ul data-bind="foreach: [{label: 'Entrance', value: 'entrance'}, {label: 'Motion UI', value: 'motion'}]">
+        <li>
+          <input type="radio" data-bind="attr: {id: 'settings-transition-' + value}, value: value, checked: $parent.settings.transition">
+          <label style="display: block;" data-bind="attr: {'for': 'settings-transition-' + value}, text: label"></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block-list" data-bind="visible: settings.transition() == 'motion'">
+      <header>Animation In</header>
+      <ul>
+        <li class="with-dropdown">
+          <select data-bind="value: settings.animationIn, options: enterAnimations"></select>
+        </li>
+      </ul>
+      <header>Animation Out</header>
+      <ul>
+        <li class="with-dropdown">
+          <select data-bind="value: settings.animationOut, options: leaveAnimations"></select>
+        </li>
+      </ul>
+      <header>Animation Speed</header>
+      <ul data-bind="foreach: [{label: 'Fast', value: 'fast'}, {label: 'Default', value: ''}, {label: 'Slow', value: 'slow'}]">
+        <li>
+          <input type="radio" data-bind="attr: {id: 'settings-animation-speed-' + value}, value: value, checked: $parent.settings.animationSpeed">
+          <label style="display: block;" data-bind="attr: {'for': 'settings-animation-speed-' + value}, text: label"></label>
+        </li>
+      </ul>
+      <header>Animation Easing</header>
+      <ul>
+        <li class="with-dropdown">
+          <select data-bind="value: settings.animationEasing, options: animationEasings"></select>
+        </li>
+      </ul>
+    </section>
+  </div>

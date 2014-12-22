@@ -1,0 +1,45 @@
+/*!
+ * Durandal 2.1.0 Copyright (c) 2012 Blue Spire Consulting, Inc. All Rights Reserved.
+ * Available via the MIT license.
+ * see: http://durandaljs.com or https://github.com/BlueSpire/Durandal for details
+ */
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.entrance-out {
+    animation-fill-mode:both;
+    animation-duration:0.1s;
+    animation-name: fadeOut;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.entrance-in {
+    animation-fill-mode:both;
+    animation-duration:0.5s;
+    animation-name: slideInRight;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.entrance-in-fade {
+    animation-fill-mode:both;
+    animation-duration:0.5s;
+    animation-name: fadeIn;
+}
