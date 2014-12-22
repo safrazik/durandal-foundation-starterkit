@@ -1,6 +1,9 @@
 define(['durandal/app', 'plugins/dialog', 'durandal/viewEngine', 'jquery'], function(app, dialog, viewEngine, $){
 
     function enableAutoclose(theDialog, targetOnly){
+        if(targetOnly === undefined){
+            targetOnly = true;
+        }
         if (theDialog.owner && theDialog.owner.autoclose){
             theDialog.$overlay.on('click', function (e) {
                 if(!targetOnly || e.target == this){ // only if the target itself has been clicked
