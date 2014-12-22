@@ -1,0 +1,13 @@
+{
+  "name": "durandal-foundation",
+  "homepage": "https://github.com/DurandalForge/durandal-foundation",
+  "_release": "4eb509f67f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4eb509f67fbd672ed23eee8fea982a1d9b3d4bd7"
+  },
+  "_source": "git://github.com/DurandalForge/durandal-foundation.git",
+  "_target": "*",
+  "_originalSource": "DurandalForge/durandal-foundation"
+}
