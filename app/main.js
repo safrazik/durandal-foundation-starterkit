@@ -1,4 +1,4 @@
-var bower = '../../bower_components';
+var bower = '../bower_components';
 
 requirejs.config({
   paths: {
