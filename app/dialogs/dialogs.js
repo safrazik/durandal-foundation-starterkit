@@ -145,7 +145,7 @@ define(['knockout', 'plugins/dialog'], function(ko, dialog){
 				autoclose: true,
 				title: 'My Notification',
 				content: 'Content of notification',
-				image: 'http://localhost/adrotec/labs/foundation/foundation-apps/docs/assets/img/medium.jpg',
+				image: 'http://www.clipartbest.com/cliparts/acq/X8R/acqX8RdcM.jpeg',
 				position: 'bottom left',
 				color: 'dark',
 			});
